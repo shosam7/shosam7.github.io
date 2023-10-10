@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shobith Sivadas Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dc14904ae4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <menu id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </menu>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I am <br><span>Shobith</span></h1>
+            </div>
+        </div>
+    </header>
+
+<!---------------about------------->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="about-col-1">
+                    <img src="images/IMG_0800.jpg">
+                </div> -->
+
+                <div class="about-col-1">
+                    <video controls>
+                        <source src="images/movie.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class = "subtitle">About me</h1>
+                    <p>Hi, my name is Shobith Sivadas and I am a student at Northeastern University currently undergoing my Master's in Software Engineering. 
+                        I have strong skills in full-stack development and experience in API development, maintenance, and support. My strengths include 
+                        object-oriented programming languages, complexity reduction, and bug removal.</p>
+                        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <!-- <ul>
+                                <li><span>API</span><br>API development and maintenance</li>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web</span><br>Web development and maintenance</li>
+                            </ul> -->
+                            <table>
+                                <tr>
+                                    <td><span>API</span></td>
+                                    <td>API development and maintenance</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td><span>UI/UX</span></td>
+                                    <td>Designing Web/App interfaces</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td><span>Web</span></td>
+                                    <td>Web development and maintenance</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <!-- <ul>
+                                <li><span>2020-2022</span><br>Systems Engineer at TCS</li>
+                                <li><span>2023</span><br>TA for OOD at Northeastern University</li>
+                            </ul> -->
+
+                            <table>
+                                <tr>
+                                    <td><span>2020-2022</span></td>
+                                    <td>
+                                        <details>
+                                            <summary>Systems Engineer at TCS</summary>
+                                            <p>Designing and maintaining RESTful APIs. <br>
+                                                Daily deliverables. <br>
+                                                Direct meetings with clients. <br>
+                                                Assisting new recruits with development. <br>
+                                                Presentation and documentation. <br>
+                                                Management.
+                                                </p>
+                                        </details>
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td><span>2023</span></td>
+                                    <td>
+                                        <details>
+                                            <summary>TA for OOD at Northeastern University</summary>
+                                            <p>Helping professor with teaching students <br>
+                                                Assessing assignments and projects of students <br>
+                                                Course syllabus updation
+                                                </p>
+                                        </details>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <!-- <ul>
+                                <li><span>2016-2020</span><br>BS Computer Science Engineering at Amrita School of Engineering</li>
+                                <li><span>2022-2024</span><br>MS Software Engineering Systems at Northeastern University</li>
+                            </ul> -->
+
+                            <table>
+                                <tr>
+                                    <td><span>2016-2020</span></td>
+                                    <td>BS Computer Science Engineering at Amrita School of Engineering</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td><span>2022-2024</span></td>
+                                    <td>MS Software Engineering Systems at Northeastern University</td>
+                                </tr>
+                            </table>
+
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------portfolio---------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class = "subtitle">My Projects</h1>
+            <div class="worklist">
+                <div class="work">
+                    <figure>
+                        <img src="images/work1.png">
+                        <figcaption>
+                            Employee Management
+                        </figcaption>
+                    </figure>
+                    <div class="layer">
+                        <h3>Employee Management</h3>
+                        <p>A website that helps companies to manage resources, information and tasks of its employees.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <figure>
+                        <img src="images/work2.png">
+                        <figcaption>
+                            Chat Application
+                        </figcaption>
+                    </figure>
+                    <div class="layer">
+                        <h3>Chat Application</h3>
+                        <p>An android chat application.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <figure>
+                        <img src="images/work3.jpeg">
+                        <figcaption>
+                            Sentiment Analysis
+                        </figcaption>
+                    </figure>
+                    <div class="layer">
+                        <h3>Sentiment Analysis</h3>
+                        <p>High efficient parallel processing sentiment analysis engine.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------contact--------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <a href ="mailto:sivadas.s@northeastern.edu" target="_blank"><i class="fa-solid fa-envelope"></i>Send Email</a>
+                    <a href ="tel:857-376-1913" target="_blank"><i class="fa-solid fa-phone"></i>Call me</a>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Copyright Ⓒ Shobith Sivadas</p>
+        </footer>
+
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
