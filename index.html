@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shobith Sivadas Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/dc14904ae4.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -29,7 +31,7 @@
         </div>
     </header>
 
-<!---------------about------------->
+    <!---------------about------------->
 
 
     <div id="about">
@@ -46,99 +48,143 @@
                 </div>
 
                 <div class="about-col-2">
-                    <h1 class = "subtitle">About me</h1>
-                    <p>Hi, my name is Shobith Sivadas and I am a student at Northeastern University currently undergoing my Master's in Software Engineering. 
-                        I have strong skills in full-stack development and experience in API development, maintenance, and support. My strengths include 
+                    <h1 class="subtitle">About me</h1>
+                    <p>Hi, my name is Shobith Sivadas and I am a student at Northeastern University currently undergoing
+                        my Master's in Software Engineering.
+                        I have strong skills in full-stack development and experience in API development, maintenance,
+                        and support. My strengths include
                         object-oriented programming languages, complexity reduction, and bug removal.</p>
-                        
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
 
-                        <div class="tab-contents active-tab" id="skills">
-                            <!-- <ul>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <!-- <ul>
                                 <li><span>API</span><br>API development and maintenance</li>
                                 <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
                                 <li><span>Web</span><br>Web development and maintenance</li>
                             </ul> -->
-                            <table>
-                                <tr>
-                                    <td><span>API</span></td>
-                                    <td>API development and maintenance</td>
-                                </tr>
-                            
-                                <tr>
-                                    <td><span>UI/UX</span></td>
-                                    <td>Designing Web/App interfaces</td>
-                                </tr>
-                            
-                                <tr>
-                                    <td><span>Web</span></td>
-                                    <td>Web development and maintenance</td>
-                                </tr>
-                            </table>
-                        </div>
+                        <table>
+                            <tr>
+                                <td><span>API</span></td>
+                                <td>API development and maintenance</td>
+                            </tr>
 
-                        <div class="tab-contents" id="experience">
-                            <!-- <ul>
+                            <tr>
+                                <td><span>UI/UX</span></td>
+                                <td>Designing Web/App interfaces</td>
+                            </tr>
+
+                            <tr>
+                                <td><span>Web</span></td>
+                                <td>Web development and maintenance</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <!-- <ul>
                                 <li><span>2020-2022</span><br>Systems Engineer at TCS</li>
                                 <li><span>2023</span><br>TA for OOD at Northeastern University</li>
                             </ul> -->
 
-                            <table>
-                                <tr>
-                                    <td><span>2020-2022</span></td>
-                                    <td>
-                                        <details>
-                                            <summary>Systems Engineer at TCS</summary>
-                                            <p>Designing and maintaining RESTful APIs. <br>
-                                                Daily deliverables. <br>
-                                                Direct meetings with clients. <br>
-                                                Assisting new recruits with development. <br>
-                                                Presentation and documentation. <br>
-                                                Management.
-                                                </p>
-                                        </details>
-                                    </td>
-                                </tr>
-                            
-                                <tr>
-                                    <td><span>2023</span></td>
-                                    <td>
-                                        <details>
-                                            <summary>TA for OOD at Northeastern University</summary>
-                                            <p>Helping professor with teaching students <br>
-                                                Assessing assignments and projects of students <br>
-                                                Course syllabus updation
-                                                </p>
-                                        </details>
-                                    </td>
-                                </tr>
-                            </table>
+                        <table>
+                            <tr>
+                                <td><span>2023</span></td>
+                                <td>
+                                    <details>
+                                        <summary>TA for OOD at Northeastern University</summary>
+                                        <p>
+                                            • Conducted regular office hours, one on one sessions with students,
+                                            explaining the concepts of object-oriented programming, Java competitive
+                                            programming and JavaFX GUI development. <br>
+                                            • Facilitated the delivery of engaging and effective lectures, workshops,
+                                            hackathons and discussions <br>
+                                            • Demonstrated attention to detail and proficiency in evaluating student
+                                            assignments, exams, and projects
+                                        </p>
+                                    </details>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span>2020-2022</span></td>
+                                <td>
+                                    <details>
+                                        <summary>Systems Engineer at TCS</summary>
+                                        <p>
+                                            • Built and maintained 100+ interactive RESTful APIs with Spring Boot and
+                                            Maven
+                                            for Amazon and secured APIs using Amazon's API gateway with SSL certificate
+                                            for
+                                            backend authentication <br>
+                                            • Deployed applications to AWS ECS through Jenkins continuous delivery while
+                                            performing extensive API and smoke testing via Postman and ReadyAPI to
+                                            ensure
+                                            reliability, used SonarQube to achieve over 80% code coverage <br>
+                                            • Redesigned 50+ complex microservices containing legacy code with the help
+                                            of
+                                            CI/CD pipelines (AWS CodePipeline), running Docker containers on AWS Batch
+                                            and
+                                            Amazon Elastic Container Service for Kubernetes <br>
+                                            • Built and maintained complex data pipelines to perform extract, transform,
+                                            and
+                                            load (ETL) operations from multiple Aurora database clusters to AWS Redshift
+                                            for
+                                            data analysis using AWS Athena, increasing performance by 20% <br>
+                                            • Mentored new hires on Spring framework, Java, JavaScript, Jenkins, SQL,
+                                            REST
+                                            APIs and AWS services <br>
+                                            • Automated workflows leveraging Git actions and AWS Batch to assist with
+                                            deployment, expansion, monitoring and support, documented code using AWS
+                                            CodeCommit, reducing manual labour by half an hour per day <br>
+                                            • Designed and engineered a predictive analytics engine for Amazon,
+                                            analyzing
+                                            data to identify potential sources of shrinkage on a global scale <br>
+                                            • Took the responsibility of being the POC between clients, data engineers,
+                                            and
+                                            the UI team for integration of APIs, eliminating the need for a specific
+                                            integration team, and leading in the reduction of labor cost by 15% <br>
+                                            • Appointed as Java team lead to guide 15 members in Java development within
+                                            a
+                                            team of 60 members and communicated complex information to new hires
+                                            reducing
+                                            implementation time by 25% <br>
+                                            • Reviewed, modified and shared constructive feedback with fellow team
+                                            leads,
+                                            ensuring the application works seamlessly across platforms <br>
+                                            • Communicated directly with clients to devise solutions and created
+                                            comprehensive documentation to assist team members in producing 100%
+                                            deliverables
+                                        </p>
+                                    </details>
+                                </td>
+                            </tr>
+                        </table>
 
-                        </div>
+                    </div>
 
-                        <div class="tab-contents" id="education">
-                            <!-- <ul>
+                    <div class="tab-contents" id="education">
+                        <!-- <ul>
                                 <li><span>2016-2020</span><br>BS Computer Science Engineering at Amrita School of Engineering</li>
                                 <li><span>2022-2024</span><br>MS Software Engineering Systems at Northeastern University</li>
                             </ul> -->
 
-                            <table>
-                                <tr>
-                                    <td><span>2016-2020</span></td>
-                                    <td>BS Computer Science Engineering at Amrita School of Engineering</td>
-                                </tr>
-                            
-                                <tr>
-                                    <td><span>2022-2024</span></td>
-                                    <td>MS Software Engineering Systems at Northeastern University</td>
-                                </tr>
-                            </table>
+                        <table>
+                            <tr>
+                                <td><span>2016-2020</span></td>
+                                <td>BS Computer Science Engineering at Amrita School of Engineering</td>
+                            </tr>
 
-                        </div>
+                            <tr>
+                                <td><span>2022-2024</span></td>
+                                <td>MS Software Engineering Systems at Northeastern University</td>
+                            </tr>
+                        </table>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -148,7 +194,7 @@
 
     <div id="portfolio">
         <div class="container">
-            <h1 class = "subtitle">My Projects</h1>
+            <h1 class="subtitle">My Projects</h1>
             <div class="worklist">
                 <div class="work">
                     <figure>
@@ -159,8 +205,10 @@
                     </figure>
                     <div class="layer">
                         <h3>Employee Management</h3>
-                        <p>A website that helps companies to manage resources, information and tasks of its employees.</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        <p>A website that helps companies to manage resources, information and tasks of its employees.
+                        </p>
+                        <a href="https://github.com/shosam7/employee-managment-system" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -199,8 +247,9 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="subtitle">Contact Me</h1>
-                    <a href ="mailto:sivadas.s@northeastern.edu" target="_blank"><i class="fa-solid fa-envelope"></i>Send Email</a>
-                    <a href ="tel:857-376-1913" target="_blank"><i class="fa-solid fa-phone"></i>Call me</a>
+                    <a href="mailto:sivadas.s@northeastern.edu" target="_blank"><i class="fa-solid fa-envelope"></i>Send
+                        Email</a>
+                    <a href="tel:857-376-1913" target="_blank"><i class="fa-solid fa-phone"></i>Call me</a>
                     <div class="social-icons">
                         <a href=""><i class="fa-brands fa-linkedin"></i></a>
                         <a href=""><i class="fa-brands fa-github"></i></a>
@@ -227,11 +276,11 @@
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks){
+        function opentab(tabname) {
+            for (tablink of tablinks) {
                 tablink.classList.remove("active-link")
             }
-            for(tabcontent of tabcontents){
+            for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab")
             }
             event.currentTarget.classList.add("active-link");
@@ -242,14 +291,15 @@
     <script>
         var sidemenu = document.getElementById("sidemenu");
 
-        function openmenu(){
+        function openmenu() {
             sidemenu.style.right = "0";
         }
 
-        function closemenu(){
+        function closemenu() {
             sidemenu.style.right = "-200px";
         }
     </script>
-    
+
 </body>
+
 </html>
